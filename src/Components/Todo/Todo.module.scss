@@ -4,25 +4,30 @@
     font-family: inherit;
     margin-bottom: 10px;
     
-    .todoItem{
-        width: 33.5%;
-        background-color: #cce6ff;
-        border: none;
-        list-style-type: none;
-        padding:8px;
-        
-    }
+        .todoItem{
+            width: 33.5%;
+            background-color: #cce6ff;
+            border: none;
+            list-style-type: none;
+            padding:8px;   
+        }
 
-    .complete, .delete{
-        background-color: transparent;
-    }
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.8;
+        }
 
-    .completeButton, .deleteButton{
-        background-color: #cce6ff;
-        border: none;
-    }
+        .complete, .delete{
+            background-color: transparent;
+        }
 
-    .completeButton:hover, .deleteButton:hover{
-        background-color: #f9ffe1;
-    }
+        .completeButton, .deleteButton{
+            background-color: #cce6ff;
+            border: none;
+        }
+
+        .completeButton:hover, .deleteButton:hover{
+            background-color: #f9ffe1;
+        }
 }
+

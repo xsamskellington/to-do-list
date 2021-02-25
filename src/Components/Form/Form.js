@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './Form.module.scss'
 
-const Form = ({todos, setTodos, inputText, setInputText}) => {
+const Form = ({todos, setTodos, inputText, setInputText, setStatus}) => {
     const inputTextHandler = (e) => {
         const {value} = e.target;
-        console.log(value)
         setInputText(value)
     };
 
@@ -14,7 +13,11 @@ const Form = ({todos, setTodos, inputText, setInputText}) => {
             ...todos,
             { text: inputText, completed: false, id: Math.random()*1000 }]);
         setInputText('');
+    }
 
+    const statusHandler = (e) =>{
+        const {value} = e.target;
+        setStatus(value)
     }
 
 
@@ -26,7 +29,7 @@ const Form = ({todos, setTodos, inputText, setInputText}) => {
             </button>
 
             <div className={styles.div}>
-                <select name="todos" className={styles.todos}> 
+                <select onChange={statusHandler} name="todos" className={styles.todos}> 
                     <option value="all"> All </option>
                     <option value="completed"> Completed </option>
                     <option value="uncompleted"> Uncompleted </option>

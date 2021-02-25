@@ -5,30 +5,30 @@
     font-family: inherit;
     text-transform: uppercase;
 
-    .input{
-        width: 25em;
-        height: 2.2em;
-        background-color: #e7e1ff;
-        border: none;
-    }
+        .input{
+            width: 25em;
+            height: 2.2em;
+            background-color: #e7e1ff;
+            border: none;
+        }
 
-    .button{
-        background-color: #e7e1ff;
-        width: 3em;
-        margin-right: 1em;
-        border: none;
-        padding: 0
-    }
+        .button{
+            background-color: #e7e1ff;
+            width: 3em;
+            margin-right: 1em;
+            border: none;
+            padding: 0
+        }
 
-    .button:hover{
-        background-color: #f9ffe1;
-    }
+        .button:hover{
+            background-color: #f9ffe1;
+        }
 
-    .todos{
-        background-color: #e7e1ff;
-        height: 2.3em;
-        border: none;
-        font-weight: normal;
-    }
+        .todos{
+            background-color: #e7e1ff;
+            height: 2.3em;
+            border: none;
+            font-weight: normal;
+        }
 
 }
