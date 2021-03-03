@@ -22,6 +22,8 @@ const Todo =({ text, todo, todos, setTodos }) => {
         <div className={styles.todoComponent}>
             <li className={`${styles.todoItem} ${todo.completed ? `${styles.completed}` : `${styles.nothing}`}`}> {text} </li>
             
+            {/* <input type="time" className={styles.time}/> */}
+
             <button onClick={completeHandler} className={styles.completeButton}>
                 <i className={`material-icons ${styles.complete}`}> done </i>
             </button>

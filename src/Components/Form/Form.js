@@ -9,6 +9,11 @@ const Form = ({todos, setTodos, inputText, setInputText, setStatus}) => {
 
     const submitTodoHandler = (e) => {
         e.preventDefault();
+
+        if(!inputText){
+            return;
+        }
+
         setTodos([
             ...todos,
             { text: inputText, completed: false, id: Math.random()*1000 }]);
@@ -23,7 +28,7 @@ const Form = ({todos, setTodos, inputText, setInputText, setStatus}) => {
 
     return (
         <form className={styles.form}>
-            <input onChange={inputTextHandler} value={inputText} className={styles.input} type="text" maxLength='80' />
+            <input onChange={inputTextHandler} value={inputText} className={styles.input} required type="text" placeholder="write a task" maxLength='80' />
             <button onClick={submitTodoHandler} className={styles.button} type="submit"> 
                 +
             </button>
